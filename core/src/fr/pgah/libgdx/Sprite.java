@@ -1,4 +1,4 @@
-²package fr.pgah.libgdx;
+package fr.pgah.libgdx;
 
 import java.util.Random;
 import com.badlogic.gdx.Gdx;
@@ -105,11 +105,7 @@ public class Sprite {
   }
 
   public void dessiner(SpriteBatch batch) {
-    batch.draw(img, coordX, coordY,
-        longueurEffective / 2, hauteurEffective / 2,
-        longueurEffective, hauteurEffective,
-        1, 1, rotation,
-        0, 0, img.getWidth(), img.getHeight(),
-        false, false);
+    batch.draw(img, coordX, coordY, longueurEffective / 2, hauteurEffective / 2, longueurEffective, hauteurEffective, 1,
+        1, rotation, 0, 0, img.getWidth(), img.getHeight(), false, false);
   }
 }
